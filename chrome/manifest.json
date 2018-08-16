@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+
+  "name": "Google Music Colorizer",
+  "version": "1.0",
+  "description": "Change the color of your Google Play Music window from the default orange.",
+  "author": "bugfroggy",
+  "homepage_url": "https://bugg.co/",
+  "offline_enabled": true,
+  "icons": {
+    "16": "img/logo-16.png",
+    "19": "img/logo-19.png",
+    "48": "img/logo-48.png",
+    "64": "img/logo-64.png",
+    "128": "img/logo-128.png"
+  },
+  "short_name": "GM Color",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "storage",
+    "declarativeContent",
+    "https://play.google.com/music/listen"
+  ],
+  "page_action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "img/logo-16.png",
+      "19": "img/logo-19.png",
+      "48": "img/logo-48.png",
+      "64": "img/logo-64.png",
+      "128": "img/logo-128.png"
+    }
+  }
+}
