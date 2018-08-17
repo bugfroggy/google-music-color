@@ -22,7 +22,14 @@
   "permissions": [
     "storage",
     "declarativeContent",
+    "activeTab",
     "https://play.google.com/music/listen"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://play.google.com/music/listen*"],
+      "js": ["modify.js"]
+    }
   ],
   "page_action": {
     "default_popup": "popup/popup.html",
