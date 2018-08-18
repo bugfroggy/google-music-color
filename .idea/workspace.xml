@@ -42,17 +42,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="41" />
-          <entry key="js" value="6827" />
+          <entry key="js" value="9739" />
           <entry key="json" value="732" />
-          <entry key="txt" value="393" />
+          <entry key="txt" value="577" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="41" />
           <entry key="JSON" value="732" />
-          <entry key="JavaScript" value="6827" />
-          <entry key="PLAIN_TEXT" value="393" />
+          <entry key="JavaScript" value="9739" />
+          <entry key="PLAIN_TEXT" value="577" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -90,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/target_data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+            <state relative-caret-position="585">
+              <caret line="163" column="38" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -99,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+            <state relative-caret-position="306">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -130,10 +130,19 @@
       <find>#playlist-drawer:not([style-scope]):not(.style-scope) .playlist-drawer-item.playlist-drop-target:not([style-scope]):not(.style-scope) .playlist-wrapper:not([style-scope]):not(.style-scope) .playlist-title:not([style-scope]):not(.style-scope)</find>
       <find>#player:not([style-scope]):not(.style-scope) paper-icon-button[data-id=&quot;repeat&quot;].active:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) paper-icon-button[data-id=&quot;shuffle&quot;].active:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) #exp-menu-shuffle.active:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) #exp-menu-repeat.active:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) #exp-menu-queue.opened:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) paper-icon-button[data-id=&quot;queue&quot;].opened:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) paper-icon-button:not([style-scope]):not(.style-scope) #exp-menu-queue.opened:not([style-scope]):not(.style-scope)</find>
       <find>#player:not([style-scope]):not(.style-scope) paper-icon-button[data-id=&quot;expandable-menu&quot;]:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) paper-icon-button[data-id=&quot;expandable-menu&quot;].opened:not([style-scope]):not(.style-scope)</find>
-      <find>.primary:not([style-scope]):not(.style-scope)</find>
       <find>.primary-background:not([style-scope]):not(.style-scope)</find>
       <find>paper-icon-button.sj-callout-target:not([style-scope]):not(.style-scope)</find>
       <find>.upload-dialog-title:not([style-scope]):not(.style-scope)</find>
+      <find>.primary:not([style-scope]):not(.style-scope)</find>
+      <find>.</find>
+      <find>sj-home[selected=&quot;0&quot;] .home-palette-id-5</find>
+      <find>.top-charts-view:not([style-scope]):not(.style-scope) .song-row:not([style-scope]):not(.style-scope) [data-col=&quot;index&quot;]:not([style-scope]):not(.style-scope) .column-content:not([style-scope]):not(.style-scope), paper-toast:not([style-scope]):not(.style-scope) paper-button[data-action=&quot;button&quot;]:not([style-scope]):not(.style-scope), .ups.light:not([style-scope]):not(.style-scope) iron-icon:not([style-scope]):not(.style-scope), .upload-dialog-dragover:not([style-scope]):not(.style-scope) .upload-dialog-description:not([style-scope]):not(.style-scope), paper-dialog:not([style-scope]):not(.style-scope) .buttons:not([style-scope]):not(.style-scope) paper-button:not([style-scope]):not(.style-scope):not([disabled])</find>
+      <find>color</find>
+      <find>.primary</find>
+      <find>.paper-checkbox-1 #checkbox.checked.paper-checkbox</find>
+      <find>.paper-toggle-button-0[checked]:not([disabled]) .toggle-button.paper-toggle-button</find>
+      <find>.name</find>
+      <find>.paper-progress-3 #primaryProgress.paper-progress</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,8 +162,8 @@
         <option value="$PROJECT_DIR$/../google-music-color/chrome/update_style.js" />
         <option value="$PROJECT_DIR$/../google-music-color/chrome/popup/popup.js" />
         <option value="$PROJECT_DIR$/../google-music-color/chrome/manifest.json" />
-        <option value="$PROJECT_DIR$/../google-music-color/chrome/target_data.js" />
         <option value="$PROJECT_DIR$/../google-music-color/chrome/init.js" />
+        <option value="$PROJECT_DIR$/../google-music-color/chrome/target_data.js" />
       </list>
     </option>
   </component>
@@ -247,7 +256,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534433473307</updated>
-      <workItem from="1534433475528" duration="24830000" />
+      <workItem from="1534433475528" duration="33023000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1534437438393</created>
@@ -270,11 +279,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534558129117</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="* Added more elements&#10;* Fixed issue where elements already in the DOM before script load weren't changing color if they weren't updated&#10;* Simplified code a bit, added some comments">
+      <created>1534560766500</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1534560766500</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24830000" />
+    <option name="totallyTimeSpent" value="33023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -310,7 +326,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="* Added color changing mechanism&#10;* Saved chosen color&#10;* TODO improve how colors are changed if possible, i.e. a single selector for multiple elements" />
     <MESSAGE value="* Fixed logos&#10;* Added dynamic data-attribute-based detection of elements that need color changing&#10;* Added a shared file `target_data.js` which contains all the targets and the function to update their color" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Fixed logos&#10;* Added dynamic data-attribute-based detection of elements that need color changing&#10;* Added a shared file `target_data.js` which contains all the targets and the function to update their color" />
+    <MESSAGE value="* Added more elements&#10;* Fixed issue where elements already in the DOM before script load weren't changing color if they weren't updated&#10;* Simplified code a bit, added some comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Added more elements&#10;* Fixed issue where elements already in the DOM before script load weren't changing color if they weren't updated&#10;* Simplified code a bit, added some comments" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../google-music-color/src/lib/wsc-chrome.min.js">
@@ -342,13 +359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/popup/popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/modify.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -363,13 +373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/popup/popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/background.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -377,17 +380,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/popup/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/popup/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/target_data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+        <state relative-caret-position="585">
+          <caret line="163" column="38" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        <state relative-caret-position="306">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>

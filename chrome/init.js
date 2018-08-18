@@ -7,7 +7,7 @@ function checkNode(node) {
             // Not registered, check if needs to be registered
             for (let i = 0; i < targets.length; i++) {
                 let target = targets[i];
-                if (node.matches(target.name)) { // Matches a target, register it
+                if (target.name && node.matches(target.name)) { // Matches a target, register it
                     node.setAttribute("data-gmusic-color-props", target.properties.join(" "));
                     node.setAttribute("data-gmusic-color-selector", target.name);
                     break;
@@ -21,9 +21,10 @@ function checkNode(node) {
 }
 
 // Check all current elements of DOM at init
-let selector;
+let selector = "";
 for(let i = 0; i < targets.length; i++)
-    selector += targets[i].name + ",";
+    if(targets[i].name)
+        selector += targets[i].name + ",";
 selector = selector.substring(0, selector.length - 1);
 document.querySelectorAll(selector).forEach(checkNode);
 
