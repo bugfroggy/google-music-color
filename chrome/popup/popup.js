@@ -13,7 +13,7 @@ colorSelector.onchange = function() {
         file: '/target_data.js'
     }, () => {
         chrome.tabs.executeScript({
-            code: 'updateStyle();'
+            code: 'chrome.storage.sync.get(["gmusic_color"], (items) => {updateStyle(items.gmusic_color);});'
         })
     });
 };

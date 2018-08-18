@@ -165,10 +165,7 @@ let targets = [ // TODO fix bug with this producing an error saying targets is a
     }
 ];
 
-function updateStyle() {
-    // Get color
-    chrome.storage.sync.get(["gmusic_color"], function(items) {
-        let color = items.gmusic_color;
+function updateStyle(color) {
 
         // Delete previously created gmusic-color style if its there
         let currentStyleElem = document.getElementById("gmusic-color-style");
@@ -218,6 +215,4 @@ function updateStyle() {
 
         // Append style to head
         document.getElementsByTagName("head")[0].appendChild(style);
-    });
-
 }

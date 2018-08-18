@@ -1,5 +1,7 @@
 // Apply CSS
-updateStyle();
+chrome.storage.sync.get(["gmusic_color"], function(items) {
+    updateStyle(items.gmusic_color);
+});
 
 function checkNode(node) {
     if (node instanceof HTMLElement)
