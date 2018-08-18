@@ -10,10 +10,14 @@ colorSelector.onchange = function() {
         console.log("Saved");
     });
     chrome.tabs.executeScript({
-        file: '/target_data.js'
+        file: '/chroma.min.js'
     }, () => {
         chrome.tabs.executeScript({
-            code: 'chrome.storage.sync.get(["gmusic_color"], (items) => {updateStyle(items.gmusic_color);});'
-        })
+            file: '/target_data.js'
+        }, () => {
+            chrome.tabs.executeScript({
+                code: 'chrome.storage.sync.get(["gmusic_color"], (items) => {updateStyle(items.gmusic_color);});'
+            })
+        });
     });
 };

@@ -167,52 +167,52 @@ let targets = [ // TODO fix bug with this producing an error saying targets is a
 
 function updateStyle(color) {
 
-        // Delete previously created gmusic-color style if its there
-        let currentStyleElem = document.getElementById("gmusic-color-style");
-        if(currentStyleElem != null)
-            currentStyleElem.parentElement.removeChild(currentStyleElem);
+    // Delete previously created gmusic-color style if its there
+    let currentStyleElem = document.getElementById("gmusic-color-style");
+    if(currentStyleElem != null)
+        currentStyleElem.parentElement.removeChild(currentStyleElem);
 
-        // Create a new style
-        let style = document.createElement("style");
-        style.id = "gmusic-color-style";
-        style.type = 'text/css';
+    // Create a new style
+    let style = document.createElement("style");
+    style.id = "gmusic-color-style";
+    style.type = 'text/css';
 
-        // Keep track of properties and selectors
-        let setProperties = [];
-        let setSelectors = [];
-        // Append all of the style properties to the new style element
-        for(let i = 0; i < targets.length; i++) {
-            let thisTargetsColor = color;
-            if(typeof targets[i].opacity === 'number')
-                thisTargetsColor += Math.floor(targets[i].opacity * 100 / 256);
+    // Keep track of properties and selectors
+    let setProperties = [];
+    let setSelectors = [];
+    // Append all of the style properties to the new style element
+    for(let i = 0; i < targets.length; i++) {
+        let thisTargetsColor = color;
+        if(typeof targets[i].opacity === 'number')
+            thisTargetsColor += Math.floor(targets[i].opacity * 100 / 256);
 
-            // Prepare to add selector CSS if it is necessary
-            let styleSelectorStr;
-            if(typeof targets[i].selector === 'string' && !setSelectors.includes(targets[i].selector))
-                styleSelectorStr = targets[i].selector + " { ";
-            // Loop through CSS properties
-            for(let j = 0; j < targets[i].properties.length; j++) {
-                let property = targets[i].properties[j];
-                // Check properties
-                if(!setProperties.includes(property)) {
-                    let stylePropStr = "*[data-gmusic-color-props~=\"" + property + "\"] { " + property + ": " + thisTargetsColor + " !important; }";
-                    style.appendChild(document.createTextNode(stylePropStr));
-                    setProperties.push(property);
-                }
-
-                // If setting selector then add this property to the selector
-                if(styleSelectorStr) {
-                    styleSelectorStr += property + ": " + thisTargetsColor + " !important;";
-                }
+        // Prepare to add selector CSS if it is necessary
+        let styleSelectorStr;
+        if(typeof targets[i].selector === 'string' && !setSelectors.includes(targets[i].selector))
+            styleSelectorStr = targets[i].selector + " { ";
+        // Loop through CSS properties
+        for(let j = 0; j < targets[i].properties.length; j++) {
+            let property = targets[i].properties[j];
+            // Check properties
+            if(!setProperties.includes(property)) {
+                let stylePropStr = "*[data-gmusic-color-props~=\"" + property + "\"] { " + property + ": " + thisTargetsColor + " !important; }";
+                style.appendChild(document.createTextNode(stylePropStr));
+                setProperties.push(property);
             }
-            // Finish up selector CSS if necessary
+
+            // If setting selector then add this property to the selector
             if(styleSelectorStr) {
-                styleSelectorStr += "}";
-                style.appendChild(document.createTextNode(styleSelectorStr));
-                setSelectors.push(targets[i].selector);
+                styleSelectorStr += property + ": " + thisTargetsColor + " !important;";
             }
         }
+        // Finish up selector CSS if necessary
+        if(styleSelectorStr) {
+            styleSelectorStr += "}";
+            style.appendChild(document.createTextNode(styleSelectorStr));
+            setSelectors.push(targets[i].selector);
+        }
+    }
 
-        // Append style to head
-        document.getElementsByTagName("head")[0].appendChild(style);
+    // Append style to head
+    document.getElementsByTagName("head")[0].appendChild(style);
 }

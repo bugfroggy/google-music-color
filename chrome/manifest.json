@@ -28,7 +28,7 @@
   "content_scripts": [
     {
       "matches": ["https://play.google.com/music/listen*"],
-      "js": ["target_data.js", "init.js"]
+      "js": ["chroma.min.js", "target_data.js", "init.js"]
     }
   ],
   "page_action": {
