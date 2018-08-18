@@ -96,26 +96,22 @@ let targets = [ // TODO fix bug with this producing an error saying targets is a
         name: ".paper-button-2",
         properties: ["background-color"]
     },
-    {
+    { // Explicit icon
         name: "iron-icon[icon=\"av:explicit\"]",
         properties: ["color"]
     },
-    {
-        name: ".sj-page-indicator-0 .sj-page-tab.iron-selected.sj-page-indicator",
-        properties: ["color"]
-    },
-    {
+    { // Scrolling page indicator on home screen
         selector: ".home-palette-id-5.sj-page-tab.style-scope.sj-page-indicator.iron-selected", // Allows for direct access to the selector
                                                                                                 // instead of applying metadata and selecting that
                                                                                                 // This helps resolve issues with selector specificity
                                                                                                 // Avoid wherever possible to improve speed
         properties: ["color"]
     },
-    {
+    { // Quick navigation home button when on home screen
         selector: "gpm-quick-nav-item.home-palette-id-5.x-scope.gpm-quick-nav-item-0",
         properties: ["color"]
     },
-    {
+    { // Quick navigation buttons on side of screen
         name: ".gpm-quick-nav-2 .items.gpm-quick-nav > [selected]",
         properties: ["color"]
     },
@@ -162,6 +158,10 @@ let targets = [ // TODO fix bug with this producing an error saying targets is a
     { // Playlist play button
         name: ".sj-play-button-0",
         properties: ["background-color"]
+    },
+    { // Splash screen progress bar
+        name: ".paper-progress-1 #primaryProgress.paper-progress",
+        properties: ["background"]
     }
 ];
 
