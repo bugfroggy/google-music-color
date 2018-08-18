@@ -2,15 +2,24 @@
 <html>
 <head>
     <style>
-        button {
-            height: 30px;
-            width: 30px;
-            outline: none;
+        body {
+            min-width: 200px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
-<body>
-<input id="color" type="color" value="#ff5722">
+<body style="min-width: 200px;">
+    <label for="color">Color</label>
+    <input name="color" id="color" type="color" value="#ff5722">
+    <label for="doRainbow">Rainbow (Requires reload)</label>
+    <input name="doRainbow" id="doRainbow" type="checkbox">
 </body>
 
 <script src="popup.js"></script>

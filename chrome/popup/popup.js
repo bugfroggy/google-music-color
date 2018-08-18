@@ -1,14 +1,21 @@
 let colorSelector = document.getElementById("color");
+let rainbowToggle = document.getElementById("doRainbow");
 
-chrome.storage.sync.get(["gmusic_color"], function(items) {
+chrome.storage.sync.get(["gmusic_color", "gmusic_rainbow_toggle"], (items) => {
     colorSelector.value = items.gmusic_color;
+    rainbowToggle.checked = items.gmusic_rainbow_toggle;
 });
 
+let alerted;
+rainbowToggle.onchange = () => {
+    save();
+    if(!alerted)
+        alert("You must reload the page for these changes to take effect.")
+    alerted = true;
+};
 
-colorSelector.onchange = function() {
-    chrome.storage.sync.set({'gmusic_color': colorSelector.value}, function() {
-        console.log("Saved");
-    });
+colorSelector.onchange = () => {
+    save();
     chrome.tabs.executeScript({
         file: '/chroma.min.js'
     }, () => {
@@ -21,3 +28,9 @@ colorSelector.onchange = function() {
         });
     });
 };
+
+function save() {
+    chrome.storage.sync.set({'gmusic_color': colorSelector.value, 'gmusic_rainbow_toggle': rainbowToggle.checked}, () => {
+        console.log("Saved");
+    });
+}
