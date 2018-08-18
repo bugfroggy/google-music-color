@@ -10,6 +10,10 @@ colorSelector.onchange = function() {
         console.log("Saved");
     });
     chrome.tabs.executeScript({
-        file: '/modify.js'
+        file: '/target_data.js'
+    }, () => {
+        chrome.tabs.executeScript({
+            code: 'updateStyle();'
+        })
     });
 };
