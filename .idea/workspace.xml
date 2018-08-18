@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3b9b972-1d53-4e3e-abbe-59e627061c50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../google-music-color/chrome/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../google-music-color/chrome/target_data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../google-music-color/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../google-music-color/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../google-music-color/chrome/img/logo-16.png" beforeDir="false" afterPath="$PROJECT_DIR$/../google-music-color/chrome/img/logo-16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../google-music-color/chrome/img/logo-19.png" beforeDir="false" afterPath="$PROJECT_DIR$/../google-music-color/chrome/img/logo-19.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../google-music-color/chrome/img/logo-48.png" beforeDir="false" afterPath="$PROJECT_DIR$/../google-music-color/chrome/img/logo-48.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../google-music-color/chrome/img/logo-64.png" beforeDir="false" afterPath="$PROJECT_DIR$/../google-music-color/chrome/img/logo-64.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../google-music-color/chrome/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../google-music-color/chrome/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../google-music-color/chrome/modify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../google-music-color/chrome/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../google-music-color/chrome/popup/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../google-music-color/chrome/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/../google-music-color/chrome/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../google-music-color/chrome/target_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../google-music-color/chrome/target_data.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,17 +42,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="41" />
-          <entry key="js" value="5272" />
+          <entry key="js" value="6827" />
           <entry key="json" value="732" />
-          <entry key="txt" value="173" />
+          <entry key="txt" value="393" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="41" />
           <entry key="JSON" value="732" />
-          <entry key="JavaScript" value="5272" />
-          <entry key="PLAIN_TEXT" value="173" />
+          <entry key="JavaScript" value="6827" />
+          <entry key="PLAIN_TEXT" value="393" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -97,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/target_data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="46" selection-end-column="106" />
+            <state relative-caret-position="34">
+              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -106,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="578">
+              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -130,6 +123,19 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>data-gmusic-prop</find>
+      <find>iron-icon.primary:not([style-scope]):not(.style-scope)</find>
+      <find>#playlist-drawer:not([style-scope]):not(.style-scope) .playlist-drawer-item.playlist-drop-target:not([style-scope]):not(.style-scope) .playlist-wrapper:not([style-scope]):not(.style-scope) .playlist-title:not([style-scope]):not(.style-scope)</find>
+      <find>#player:not([style-scope]):not(.style-scope) paper-icon-button[data-id=&quot;repeat&quot;].active:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) paper-icon-button[data-id=&quot;shuffle&quot;].active:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) #exp-menu-shuffle.active:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) #exp-menu-repeat.active:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) #exp-menu-queue.opened:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) paper-icon-button[data-id=&quot;queue&quot;].opened:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) paper-icon-button:not([style-scope]):not(.style-scope) #exp-menu-queue.opened:not([style-scope]):not(.style-scope)</find>
+      <find>#player:not([style-scope]):not(.style-scope) paper-icon-button[data-id=&quot;expandable-menu&quot;]:not([style-scope]):not(.style-scope),#player:not([style-scope]):not(.style-scope) paper-icon-button[data-id=&quot;expandable-menu&quot;].opened:not([style-scope]):not(.style-scope)</find>
+      <find>.primary:not([style-scope]):not(.style-scope)</find>
+      <find>.primary-background:not([style-scope]):not(.style-scope)</find>
+      <find>paper-icon-button.sj-callout-target:not([style-scope]):not(.style-scope)</find>
+      <find>.upload-dialog-title:not([style-scope]):not(.style-scope)</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../google-music-color" />
   </component>
@@ -146,8 +152,8 @@
         <option value="$PROJECT_DIR$/../google-music-color/chrome/modify.js" />
         <option value="$PROJECT_DIR$/../google-music-color/chrome/update_style.js" />
         <option value="$PROJECT_DIR$/../google-music-color/chrome/popup/popup.js" />
-        <option value="$PROJECT_DIR$/../google-music-color/chrome/target_data.js" />
         <option value="$PROJECT_DIR$/../google-music-color/chrome/manifest.json" />
+        <option value="$PROJECT_DIR$/../google-music-color/chrome/target_data.js" />
         <option value="$PROJECT_DIR$/../google-music-color/chrome/init.js" />
       </list>
     </option>
@@ -241,7 +247,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534433473307</updated>
-      <workItem from="1534433475528" duration="22091000" />
+      <workItem from="1534433475528" duration="24830000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1534437438393</created>
@@ -257,11 +263,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534519982706</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="* Fixed logos&#10;* Added dynamic data-attribute-based detection of elements that need color changing&#10;* Added a shared file `target_data.js` which contains all the targets and the function to update their color">
+      <created>1534558129117</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1534558129117</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22091000" />
+    <option name="totallyTimeSpent" value="24830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -296,7 +309,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="* Added color changing mechanism&#10;* Saved chosen color&#10;* TODO improve how colors are changed if possible, i.e. a single selector for multiple elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Added color changing mechanism&#10;* Saved chosen color&#10;* TODO improve how colors are changed if possible, i.e. a single selector for multiple elements" />
+    <MESSAGE value="* Fixed logos&#10;* Added dynamic data-attribute-based detection of elements that need color changing&#10;* Added a shared file `target_data.js` which contains all the targets and the function to update their color" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Fixed logos&#10;* Added dynamic data-attribute-based detection of elements that need color changing&#10;* Added a shared file `target_data.js` which contains all the targets and the function to update their color" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../google-music-color/src/lib/wsc-chrome.min.js">
@@ -318,13 +332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="69" lean-forward="true" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -363,17 +370,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="69" lean-forward="true" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/target_data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="46" selection-end-column="106" />
+        <state relative-caret-position="34">
+          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../google-music-color/chrome/init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="578">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
         </state>
       </provider>
     </entry>
