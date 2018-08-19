@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Google Music Colorizer",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Change the colors of your Google Play Music window.",
   "author": "bugfroggy",
   "homepage_url": "https://bugg.co/",
