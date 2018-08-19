@@ -10,7 +10,7 @@ let alerted;
 rainbowToggle.onchange = () => {
     save();
     if(!alerted)
-        alert("You must reload the page for these changes to take effect.")
+        alert("You must reload the page for these changes to take effect.");
     alerted = true;
 };
 
@@ -23,7 +23,7 @@ colorSelector.onchange = () => {
             file: '/target_data.js'
         }, () => {
             chrome.tabs.executeScript({
-                code: 'chrome.storage.sync.get(["gmusic_color"], (items) => {updateStyle(items.gmusic_color);});'
+                code: 'chrome.storage.sync.get(["gmusic_color"], (items) => {updateStyle(items.gmusic_color, true);});'
             })
         });
     });

@@ -5,10 +5,10 @@ chrome.storage.sync.get(["gmusic_color", "gmusic_rainbow_toggle"], function(item
         setInterval(() => {
             let currentChromaColor = chroma(currentColor);
             currentColor = currentChromaColor.set("hsl.h", currentChromaColor.get("hsl.h") + 1).hex();
-            updateStyle(currentColor);
+            updateStyle(currentColor, true);
         }, 50);
     } else
-        updateStyle(items.gmusic_color);
+        updateStyle(items.gmusic_color, true);
 });
 
 function checkNode(node) {
