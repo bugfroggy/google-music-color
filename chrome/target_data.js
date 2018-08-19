@@ -201,7 +201,7 @@ let dark_targets = [
         }
     },
     { // Palette 0 - Album titles, "Recent Activity", etc.
-        selector: "div.home-view.g-content sj-home .home-palette-id-0",
+        selector: "div.home-view.g-content sj-home .home-palette-id-0:not(.gpm-now-card-grid)",
         style: {
             "color": "rgb(200,200,200)"
         }

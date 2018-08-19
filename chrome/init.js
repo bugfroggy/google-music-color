@@ -1,14 +1,14 @@
 // Apply CSS
-chrome.storage.sync.get(["gmusic_color", "gmusic_rainbow_toggle"], function(items) {
+chrome.storage.sync.get(["gmusic_color", "gmusic_rainbow_toggle", "gmusic_dark_toggle"], function(items) {
     if(items.gmusic_rainbow_toggle) {
         let currentColor = items.gmusic_color;
         setInterval(() => {
             let currentChromaColor = chroma(currentColor);
             currentColor = currentChromaColor.set("hsl.h", currentChromaColor.get("hsl.h") + 1).hex();
-            updateStyle(currentColor, true);
+            updateStyle(currentColor, items.gmusic_dark_toggle);
         }, 50);
     } else
-        updateStyle(items.gmusic_color, true);
+        updateStyle(items.gmusic_color, items.gmusic_dark_toggle);
 });
 
 function checkNode(node) {
